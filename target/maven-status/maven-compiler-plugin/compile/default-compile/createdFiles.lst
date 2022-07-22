@@ -1,5 +1,0 @@
-org\struts\dao\AdminDB.class
-org\struts\model\User.class
-org\struts\action\RegisterAction.class
-org\struts\App.class
-org\struts\action\ReadAction.class
