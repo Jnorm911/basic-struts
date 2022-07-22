@@ -16,7 +16,7 @@
             <result name="REGISTER">WEB-INF/crud/thankyou.jsp</result>
         </action>
         <action name="readuser" class="org.struts.action.ReadAction">
-			<result name="READUSER">/report.jsp</result>
+			<result name="READUSER">WEB-INF/crud/readuser.jsp</result>
 		</action>
     </package>
 
