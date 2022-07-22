@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+    
+    <package name="basicstruts2" extends="struts-default">
+        <action name="index">
+            <result>/index.jsp</result>
+        </action>
+        <action name="registerPage">
+            <result>WEB-INF/crud/register.jsp</result>
+        </action>
+        <action name="registerUser" class="org.struts.action.RegisterAction" method="execute">
+            <result name="REGISTER">WEB-INF/crud/thankyou.jsp</result>
+        </action>
+        <action name="readuser" class="org.struts.action.ReadAction">
+			<result name="READUSER">/report.jsp</result>
+		</action>
+    </package>
+
+</struts>
