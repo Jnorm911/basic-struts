@@ -1,3 +1,3 @@
-Incomplete crud operations for struts
+Crud operations for struts
 
 TODO: Update & Delete
