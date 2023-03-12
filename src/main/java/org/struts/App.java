@@ -26,15 +26,15 @@ public class App {
                         .toString();
                 try (PreparedStatement statement = connection.prepareStatement(sql)) {
                     statement.setInt(1, 1);
-                    statement.setString(2, "Jake2");
-                    statement.setString(3, "United States2");
-                    statement.setString(4, "From State Farm2");
+                    statement.setString(2, "Jake");
+                    statement.setString(3, "From State Farm");
+                    statement.setString(4, "Best Commerical");
                     int rowsAffected = statement.executeUpdate();
                     System.out.println(rowsAffected + " row(s) inserted");
                 }
 
                 // UPDATE demo
-                String userToUpdate = "Nikita";
+                String userToUpdate = "Your mom";
                 System.out.print("Updating 'Location' for user '" + userToUpdate + "', press ENTER to continue...");
                 System.in.read();
                 sql = "UPDATE Employees SET Location = N'United States' WHERE Name = ?";
@@ -45,7 +45,7 @@ public class App {
                 }
 
                 // DELETE demo
-                String userToDelete = "Jared";
+                String userToDelete = "Your mom";
                 System.out.print("Deleting user '" + userToDelete + "', press ENTER to continue...");
                 System.in.read();
                 sql = "DELETE FROM Employees WHERE Name = ?;";
